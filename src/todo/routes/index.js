@@ -22,6 +22,9 @@ todoRouter.put('/done/:id', TodoController.doneTask);
 // get list of all done tasks
 todoRouter.get('/done-task', TodoController.getDoneTaskList);
 
+// get task details via id
+todoRouter.get('/details/:id', TodoController.getTaskDetails);
+
 // edit task
 todoRouter.put('/edit/:id', TodoController.editTask);
 

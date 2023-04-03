@@ -64,6 +64,15 @@ class TodoController {
         }
     }
 
+    static getTaskDetails(req, res) {
+        try {
+            new TodoServices(req, res).taskDetails();
+        }
+        catch(err){
+            console.log(err);
+        }
+    }
+
     static editTask(req, res) {
         try {
             new TodoServices(req, res).editTask();
