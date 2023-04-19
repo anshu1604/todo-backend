@@ -11,7 +11,7 @@ export const connectToDB = async () => {
       useNewUrlParser: true,
       useUnifiedTopology: true
     }, () => {
-      console.log("todo db connected!");
+      console.log("database connected!");
       return mongoose;
   })
 }
